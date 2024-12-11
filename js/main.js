@@ -123,18 +123,42 @@
 
 
     
-   // Back to top button
-   $(window).scroll(function () {
-    if ($(this).scrollTop() > 300) {
-        $('.back-to-top').fadeIn('slow');
+    // Back to top button
+    const backToTopButton = document.getElementById("backToTop");
+
+    // Muestra el botón al hacer scroll
+    window.addEventListener("scroll", () => {
+    // Condición para mostrar el botón (puedes ajustarla)
+    if (window.scrollY > 200) {
+        backToTopButton.classList.add("visible");
     } else {
-        $('.back-to-top').fadeOut('slow');
+        backToTopButton.classList.remove("visible");
     }
     });
-    $('.back-to-top').click(function () {
-        $('html, body').animate({scrollTop: 0}, 1500, 'easeInOutExpo');
-        return false;
+
+    // Función para subir al inicio con animación suave
+    backToTopButton.addEventListener("click", () => {
+    window.scrollTo({
+        top: 0,
+        behavior: "smooth", // Animación suave
     });
+    });
+
+
+    // Pruebas
+    gsap.fromTo(
+        ".brand img",
+        { opacity: 0, scale: 0.8 }, // Estado inicial
+        { 
+        opacity: 1, 
+        scale: 1, 
+        duration: 1, 
+        ease: "power2.out", 
+        stagger: 0.2 // Tiempo entre cada logo 
+        }
+    );
+
+
 
 
 })(jQuery);
@@ -144,16 +168,12 @@
 
 
 
-// Pruebas
-gsap.fromTo(
-    ".brand img",
-    { opacity: 0, scale: 0.8 }, // Estado inicial
-    { 
-      opacity: 1, 
-      scale: 1, 
-      duration: 1, 
-      ease: "power2.out", 
-      stagger: 0.2 // Tiempo entre cada logo 
-    }
-  );
+
+
   
+
+
+
+
+
+
