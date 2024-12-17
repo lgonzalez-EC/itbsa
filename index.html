@@ -443,20 +443,24 @@
 
         <!-- Brands Start -->
         <div class="container-fluid py-5">
-            <div class="container">
-              <div class="brands-container">
-                <div class="brand"><img src="img/brands/brand1.jpg" alt="Brand 1"></div>
-                <div class="brand"><img src="img/brands/brand2.jpg" alt="Brand 2"></div>
-                <div class="brand"><img src="img/brands/brand3.jpg" alt="Brand 3"></div>
-                <div class="brand"><img src="img/brands/brand4.jpg" alt="Brand 4"></div>
-                <div class="brand"><img src="img/brands/brand5.jpg" alt="Brand 5"></div>
-                <div class="brand"><img src="img/brands/brand6.jpg" alt="Brand 6"></div>
-                <div class="brand"><img src="img/brands/brand7.jpg" alt="Brand 7"></div>
-                <div class="brand"><img src="img/brands/brand8.jpg" alt="Brand 8"></div>
-                <div class="brand"><img src="img/brands/brand9.jpg" alt="Brand 9"></div>
-                <div class="brand"><img src="img/brands/brand10.jpg" alt="Brand 10"></div>
-                <div class="brand"><img src="img/brands/brand11.jpg" alt="Brand 11"></div>
-              </div>
+            <div class="container pb-5">
+                <div class="text-center mx-auto pb-5 wow fadeInUp" data-wow-delay="0.1s" style="max-width: 800px;">
+                    <h4 class="text-primary">Nuestros</h4>
+                    <h2 class="display-4">Clientes</h2>
+                </div>
+                <div class="wrapper">
+                    <div class="item item1"><img src="img/brands/brand1.jpg" alt=""></div>
+                    <div class="item item2"><img src="img/brands/brand2.jpg" alt=""></div>
+                    <div class="item item3"><img src="img/brands/brand3.jpg" alt=""></div>
+                    <div class="item item4"><img src="img/brands/brand4.jpg" alt=""></div>
+                    <div class="item item5"><img src="img/brands/brand5.jpg" alt=""></div>
+                    <div class="item item6"><img src="img/brands/brand6.jpg" alt=""></div>
+                    <div class="item item7"><img src="img/brands/brand7.jpg" alt=""></div>
+                    <div class="item item8"><img src="img/brands/brand8.jpg" alt=""></div>
+                    <div class="item item9"><img src="img/brands/brand9.jpg" alt=""></div>
+                    <div class="item item10"><img src="img/brands/brand10.jpg" alt=""></div>
+                    <div class="item item11"><img src="img/brands/brand11.jpg" alt=""></div>
+                </div>
             </div>
         </div>
         <!-- Brands End -->
@@ -847,6 +851,31 @@
         <!-- Back to Top Button -->
         <button id="backToTop" class="back-to-top"><i class="fa fa-arrow-up"></i></button>
 
+
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+        <script>
+            const images = document.querySelectorAll('.carousel-image');
+        
+            // Asegurar que la primera imagen sea visible al inicio
+            gsap.set(images[0], { opacity: 1 });
+        
+            // Crear la línea de tiempo
+            const tl = gsap.timeline({ repeat: -1, defaults: { duration: 1.5, ease: "power2.inOut" } });
+        
+            images.forEach((image, index) => {
+                const nextImage = images[(index + 1) % images.length]; // Siguiente imagen en el ciclo
+        
+                // Animación entre la imagen actual y la siguiente
+                tl.to(image, { xPercent: 100, opacity: 0, duration: 1, delay: 2 }) // Actual desaparece hacia la derecha
+                  .fromTo(nextImage, 
+                    { xPercent: -100, opacity: 0 }, // Empieza a la izquierda
+                    { xPercent: 0, opacity: 1, duration: 1 }, // Aparece al centro
+                    "-=1" // Solapar animaciones para suavidad
+                  );
+            });
+        </script>
+        
         
     <!-- JavaScript Libraries -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
@@ -857,7 +886,7 @@
     <script src="lib/counterup/counterup.min.js"></script>
     <script src="lib/owlcarousel/owl.carousel.min.js"></script>
     <script src="lib/lightbox/js/lightbox.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
 
 

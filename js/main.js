@@ -146,17 +146,7 @@
 
 
     // Pruebas
-    gsap.fromTo(
-        ".brand img",
-        { opacity: 0, scale: 0.8 }, // Estado inicial
-        { 
-        opacity: 1, 
-        scale: 1, 
-        duration: 1, 
-        ease: "power2.out", 
-        stagger: 0.2 // Tiempo entre cada logo 
-        }
-    );
+  
 
 
 
