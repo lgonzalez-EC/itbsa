@@ -14,7 +14,7 @@
         <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet"> 
 
         <!-- Icon Font Stylesheet -->
-        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"/>
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.7.1/css/all.css"/>
         <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
 
         <!-- Libraries Stylesheet -->
@@ -70,24 +70,22 @@
 
         <!-- Navbar & Hero Start -->
         <div class="container-fluid sticky-top px-0">
-            <div class="position-absolute bg-dark" style="left: 0; top: 0; width: 100%; height: 100%;">
-            </div>
-            <div class="container px-0">
+            <div class="position-absolute bg-dark" style="left: 0; top: 0; width: 100%; height: 100%;"></div>
+                <div class="container px-0">
                 <nav class="navbar navbar-expand-lg navbar-dark bg-white py-3 px-4">
                     <a href="index.html" class="navbar-brand p-0">
-                        <!-- <h1 class="text-primary m-0"><i class="fas fa-home me-3"></i>ITBSA</h1> -->
-                        <img class="logo-menu" src="img/logo_2.png" alt="Logo">
+                    <img class="logo-menu" src="img/logo_2.png" alt="Logo" style="width: 150px;">
                     </a>
-                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
-                        <span class="fa fa-bars"></span>
-                    </button>
-                    <div class="collapse navbar-collapse" id="navbarCollapse">
-                        <div class="navbar-nav ms-auto py-0">
-                            <a href="index.html" class="nav-item nav-link active">Inicio</a>
-                            <a href="about.html" class="nav-item nav-link">Nosotros</a>
-                            <a href="service.html" class="nav-item nav-link">Servicios</a>
-                            <a href="contact.html" class="nav-item nav-link">Contacto</a>
-                        </div>
+                <button class="navbar-toggler ms-auto" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+                <span class="fa fa-bars"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarCollapse">
+                    <div class="navbar-nav ms-auto py-0">
+                        <a href="index.html" class="nav-item nav-link active">Inicio</a>
+                        <a href="about.html" class="nav-item nav-link">Nosotros</a>
+                        <a href="service.html" class="nav-item nav-link">Servicios</a>
+                        <a href="contact.html" class="nav-item nav-link">Contacto</a>
+                    </div> 
                     </div>
                 </nav>
             </div>
@@ -187,55 +185,57 @@
         <!-- About End -->
 
 
-        <!-- Services Start -->
-        <div class="container-fluid service py-5">
-            <div class="container py-5">
-                <div class="text-center mx-auto pb-5 wow fadeInUp" data-wow-delay="0.1s" style="max-width: 800px;">
-                    <h4 class="text-primary">¿Qué nos diferencia?</h4>
-                    <h1 class="display-4">¿Qué es lo que nos diferencia del resto?</h1>
+        <!-- Elementos clave Start -->
+        <div class="container py-5">
+            <div class="row g-4 text-center">
+
+                <div class="text-center mb-4 wow fadeInLeft" data-wow-delay="0.1s">
+                    <h4 class="text-primary">Principios que nos guían y nos impulsan a construir un futuro mejor</h4>
+                    <h1 class="display-6">Nuestros elementos clave</h1>
                 </div>
-                <div class="row g-4 justify-content-center text-center">
-                    <div class="col-md-6 col-lg-4 col-xl-3 wow fadeInUp" data-wow-delay="0.1s">
-                        <div class="bg-light rounded">
-                            <div class="service-content text-center p-4">
-                                <i class="fas fa-lightbulb icon-size mb-3" style="color: #f39c12;"></i>
-                                <h4 class="mb-3" style="color: #2c3e50;">Innovación</h4>
-                                <p class="mb-4" style="color: #7f8c8d;">Mejoramos las técnicas y procedimientos constructivos para eficientar y beneficiar al cliente.</p>
-                            </div>
-                        </div>
+                
+                <!-- Innovación -->
+                <div class="col-12 col-md-6 col-lg-3 wow fadeInUp" data-wow-delay="0.1s">
+                    <div class="card p-4 shadow-sm h-100 border-0">
+                        <i class="fa-solid fa-lightbulb fa-3x text-primary mb-3"></i>
+                        <h4 class="text-secondary mb-3">Innovación</h4>
+                        <p>Mejoramos las técnicas y procedimientos constructivos para eficientar y beneficiar al cliente.</p>
                     </div>
-                    <div class="col-md-6 col-lg-4 col-xl-3 wow fadeInUp" data-wow-delay="0.3s">
-                        <div class=" bg-light rounded ">
-                            <div class="service-content text-center p-4">
-                                <i class="fas fa-chalkboard-teacher icon-size mb-3" style="color: #f39c12;"></i>
-                                <h4 class="mb-3" style="color: #2c3e50;">Capacitación</h4>
-                                <p class="mb-4" style="color: #7f8c8d;">Mantenemos a nuestro personal operativo actualizado y en constante capacitación para solventar cualquier reto.</p>
-                            </div>
-                        </div>
+                </div>
+        
+                <!-- Sustentable -->
+                <div class="col-12 col-md-6 col-lg-3 wow fadeInUp" data-wow-delay="0.3s">
+                    <div class="card p-4 shadow-sm h-100 border-0">
+                        <i class="fa-solid fa-seedling fa-3x text-primary mb-3"></i>
+                        <h4 class="text-secondary mb-3">Sustentable</h4>
+                        <p>Nos preocupamos por el medio ambiente y su entorno, trabajando en conjunto con la sociedad para generar espacios autosustentables.</p>
                     </div>
-                    <div class="col-md-6 col-lg-4 col-xl-3 wow fadeInUp" data-wow-delay="0.5s">
-                        <div class="bg-light rounded">
-                            <div class="service-content text-center p-4">
-                                <i class="fas fa-leaf icon-size mb-3" style="color: #f39c12;"></i>
-                                <h4 class="mb-3" style="color: #2c3e50;">Sustentabilidad</h4>
-                                <p class="mb-4" style="color: #7f8c8d;">Nos preocupamos por el medio ambiente y su entorno, trabajando en conjunto con la sociedad para generar espacios autosustentables.</p>
-                            </div>
-                        </div>
+                </div>
+        
+                <!-- Profesionalismo -->
+                <div class="col-12 col-md-6 col-lg-3 wow fadeInUp" data-wow-delay="0.5s">
+                    <div class="card p-4 shadow-sm h-100 border-0">
+                        <i class="fa-solid fa-user-tie fa-3x text-primary mb-3"></i>
+                        <h4 class="text-secondary mb-3">Profesional</h4>
+                        <p>Contamos con 13 años de experiencia dentro de la construcción, 
+                            lo que nos permite realizar grandes proyectos de manera confiable y profesional.</p>
                     </div>
-                    <div class="col-md-6 col-lg-4 col-xl-3 wow fadeInUp" data-wow-delay="0.7s">
-                        <div class=" bg-light rounded">
-                            <div class="service-content text-center p-4">
-                                <i class="fas fa-briefcase icon-size mb-3" style="color: #f39c12;"></i>
-                                <h4 class="mb-3" style="color: #2c3e50;">Profesionalismo</h4>
-                                <p class="mb-4" style="color: #7f8c8d;">Contamos con 13 años de experiencia dentro de la construcción, lo que nos permite realizar grandes proyectos de manera confiable y profesional.</p>
-                            </div>
-                        </div>
+                </div>
+        
+                <!-- Capacitación -->
+                <div class="col-12 col-md-6 col-lg-3 wow fadeInUp" data-wow-delay="0.7s">
+                    <div class="card p-4 shadow-sm h-100 border-0">
+                        <i class="fa-solid fa-chalkboard-teacher fa-3x text-primary mb-3"></i>
+                        <h4 class="text-secondary mb-3">Capacitación</h4>
+                        <p>Mantenemos a nuestro personal operativo actualizado y en 
+                            constante capacitación para solventar cualquier reto.</p>
                     </div>
                 </div>
             </div>
         </div>
-        <!-- Services End -->
+        <!-- Elementos clave End -->
 
+        
         <style>
         /* Ajusta el tamaño de los iconos */
         .icon-size {
