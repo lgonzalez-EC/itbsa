@@ -4,6 +4,7 @@
     <head>
         <meta charset="utf-8">
         <title>ITBSA - Ingeniería y Tecnología en Cada Obra</title>
+        <link rel="icon" type="image/png" href="img/logo_ico.png">
         <meta content="width=device-width, initial-scale=1.0" name="viewport">
         <meta content="" name="keywords">
         <meta content="" name="description">
@@ -14,7 +15,7 @@
         <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet"> 
 
         <!-- Icon Font Stylesheet -->
-        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"/>
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.7.1/css/all.css"/>
         <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
 
         <!-- Libraries Stylesheet -->
@@ -59,7 +60,6 @@
                             <a href="#" class="btn btn-primary btn-square rounded-circle nav-fill me-3"><i class="fab fa-facebook-f text-white"></i></a>
                             <a href="#" class="btn btn-primary btn-square rounded-circle nav-fill me-3"><i class="fab fa-twitter text-white"></i></a>
                             <a href="#" class="btn btn-primary btn-square rounded-circle nav-fill me-3"><i class="fab fa-instagram text-white"></i></a>
-                            <a href="#" class="btn btn-primary btn-square rounded-circle nav-fill me-0"><i class="fab fa-linkedin-in text-white"></i></a>
                         </div>
                     </div>
                 </div>
@@ -70,48 +70,28 @@
 
         <!-- Navbar & Hero Start -->
         <div class="container-fluid sticky-top px-0">
-            <div class="position-absolute bg-dark" style="left: 0; top: 0; width: 100%; height: 100%;">
-            </div>
-            <div class="container px-0">
+            <div class="position-absolute bg-dark" style="left: 0; top: 0; width: 100%; height: 100%;"></div>
+                <div class="container px-0">
                 <nav class="navbar navbar-expand-lg navbar-dark bg-white py-3 px-4">
                     <a href="index.html" class="navbar-brand p-0">
-                        <!-- <h1 class="text-primary m-0"><i class="fas fa-home me-3"></i>ITBSA</h1> -->
-                        <img class="logo-menu" src="img/logo_2.png" alt="Logo">
+                    <img class="logo-menu" src="img/logo_2.png" alt="Logo" style="width: 150px;">
                     </a>
-                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
-                        <span class="fa fa-bars"></span>
-                    </button>
-                    <div class="collapse navbar-collapse" id="navbarCollapse">
-                        <div class="navbar-nav ms-auto py-0">
-                            <a href="index.html" class="nav-item nav-link active">Inicio</a>
-                            <a href="about.html" class="nav-item nav-link">Nosotros</a>
-                            <a href="service.html" class="nav-item nav-link">Servicios</a>
-                            <a href="contact.html" class="nav-item nav-link">Contacto</a>
-                        </div>
+                <button class="navbar-toggler ms-auto" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+                <span class="fa fa-bars"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarCollapse">
+                    <div class="navbar-nav ms-auto py-0">
+                        <a href="index.html" class="nav-item nav-link active">Inicio</a>
+                        <a href="about.html" class="nav-item nav-link">Nosotros</a>
+                        <a href="service.html" class="nav-item nav-link">Servicios</a>
+                        <a href="contact.html" class="nav-item nav-link">Contacto</a>
+                    </div> 
                     </div>
                 </nav>
             </div>
         </div>
         <!-- Navbar & Hero End -->
 
-        <!-- Modal Search Start -->
-        <!-- <div class="modal fade" id="searchModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-            <div class="modal-dialog modal-fullscreen">
-                <div class="modal-content rounded-0">
-                    <div class="modal-header">
-                        <h4 class="modal-title mb-0" id="exampleModalLabel">Search by keyword</h4>
-                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                    </div>
-                    <div class="modal-body d-flex align-items-center">
-                        <div class="input-group w-75 mx-auto d-flex">
-                            <input type="search" class="form-control p-3" placeholder="keywords" aria-describedby="search-icon-1">
-                            <span id="search-icon-1" class="input-group-text p-3"><i class="fa fa-search"></i></span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div> -->
-        <!-- Modal Search End -->
 
         <!-- Carousel Start -->
         <div class="header-carousel owl-carousel">
@@ -138,7 +118,7 @@
                         <h1 class="display-1 text-capitalize text-white mb-4">Conoce nuestros servicios</h1>
                         <!-- <p class="mb-5 fs-5">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
                         </p> -->
-                        <a class="btn btn-primary rounded-pill py-3 px-5 mb-4 me-4" href="#">Ver más</a>
+                        <a class="btn btn-primary rounded-pill py-3 px-5 mb-4 me-4" href="service.html">Ver más</a>
                         <!-- <a class="btn btn-dark rounded-pill py-3 px-5 mb-4" href="#">Read More</a> -->
                     </div>
                 </div>
@@ -148,12 +128,12 @@
 
 
         <!-- About Start -->
-        <div class="container-fluid about bg-light py-5">
+        <div class="container-fluid about bg-white py-5">
             <div class="container py-5">
                 <div class="row g-5 align-items-center">
-                    <div class="col-lg-6 col-xl-5 wow fadeInLeft" data-wow-delay="0.1s">
+                    <div class="col-lg-6 col-xl-5 wow fadeInLeft" data-wow-delay="0.3s">
                         <div class="about-img">
-                            <img src="img/about-2.jpg" class="img-fluid w-100 rounded-bottom" alt="Image">
+                            <img src="img/about-2.jpg" class="img-fluid w-100" style="border-radius: 10px;" alt="Image">
                         </div>
                     </div>
                     <div class="col-lg-6 col-xl-7 wow fadeInRight" data-wow-delay="0.3s">
@@ -173,55 +153,57 @@
         <!-- About End -->
 
 
-        <!-- Services Start -->
-        <div class="container-fluid service py-5">
-            <div class="container py-5">
-                <div class="text-center mx-auto pb-5 wow fadeInUp" data-wow-delay="0.1s" style="max-width: 800px;">
-                    <h4 class="text-primary">¿Qué nos diferencia?</h4>
-                    <h1 class="display-4">¿Qué es lo que nos diferencia del resto?</h1>
+        <!-- Elementos clave Start -->
+        <div class="container py-5  ">
+            <div class="row g-4 text-center">
+
+                <div class="text-center mb-4 wow fadeInLeft" data-wow-delay="0.1s">
+                    <h4 class="text-primary">Principios que nos guían y nos impulsan a construir un futuro mejor</h4>
+                    <h1 class="display-6">Nuestros elementos clave</h1>
                 </div>
-                <div class="row g-4 justify-content-center text-center">
-                    <div class="col-md-6 col-lg-4 col-xl-3 wow fadeInUp" data-wow-delay="0.1s">
-                        <div class="bg-light rounded">
-                            <div class="service-content text-center p-4">
-                                <i class="fas fa-lightbulb icon-size mb-3" style="color: #f39c12;"></i>
-                                <h4 class="mb-3" style="color: #2c3e50;">Innovación</h4>
-                                <p class="mb-4" style="color: #7f8c8d;">Mejoramos las técnicas y procedimientos constructivos para eficientar y beneficiar al cliente.</p>
-                            </div>
-                        </div>
+                
+                <!-- Innovación -->
+                <div class="col-12 col-md-6 col-lg-3 wow fadeInUp" data-wow-delay="0.1s">
+                    <div class="card p-4 shadow-sm h-100 border-0">
+                        <i class="fa-solid fa-lightbulb fa-3x text-primary mb-3"></i>
+                        <h4 class="text-secondary mb-3">Innovación</h4>
+                        <p>Mejoramos las técnicas y procedimientos constructivos para eficientar y beneficiar al cliente.</p>
                     </div>
-                    <div class="col-md-6 col-lg-4 col-xl-3 wow fadeInUp" data-wow-delay="0.3s">
-                        <div class=" bg-light rounded ">
-                            <div class="service-content text-center p-4">
-                                <i class="fas fa-chalkboard-teacher icon-size mb-3" style="color: #f39c12;"></i>
-                                <h4 class="mb-3" style="color: #2c3e50;">Capacitación</h4>
-                                <p class="mb-4" style="color: #7f8c8d;">Mantenemos a nuestro personal operativo actualizado y en constante capacitación para solventar cualquier reto.</p>
-                            </div>
-                        </div>
+                </div>
+        
+                <!-- Sustentable -->
+                <div class="col-12 col-md-6 col-lg-3 wow fadeInUp" data-wow-delay="0.3s">
+                    <div class="card p-4 shadow-sm h-100 border-0">
+                        <i class="fa-solid fa-seedling fa-3x text-primary mb-3"></i>
+                        <h4 class="text-secondary mb-3">Sustentable</h4>
+                        <p>Nos preocupamos por el medio ambiente y su entorno, trabajando en conjunto con la sociedad para generar espacios autosustentables.</p>
                     </div>
-                    <div class="col-md-6 col-lg-4 col-xl-3 wow fadeInUp" data-wow-delay="0.5s">
-                        <div class="bg-light rounded">
-                            <div class="service-content text-center p-4">
-                                <i class="fas fa-leaf icon-size mb-3" style="color: #f39c12;"></i>
-                                <h4 class="mb-3" style="color: #2c3e50;">Sustentabilidad</h4>
-                                <p class="mb-4" style="color: #7f8c8d;">Nos preocupamos por el medio ambiente y su entorno, trabajando en conjunto con la sociedad para generar espacios autosustentables.</p>
-                            </div>
-                        </div>
+                </div>
+        
+                <!-- Profesionalismo -->
+                <div class="col-12 col-md-6 col-lg-3 wow fadeInUp" data-wow-delay="0.5s">
+                    <div class="card p-4 shadow-sm h-100 border-0">
+                        <i class="fa-solid fa-user-tie fa-3x text-primary mb-3"></i>
+                        <h4 class="text-secondary mb-3">Profesional</h4>
+                        <p>Contamos con 13 años de experiencia dentro de la construcción, 
+                            lo que nos permite realizar grandes proyectos de manera confiable y profesional.</p>
                     </div>
-                    <div class="col-md-6 col-lg-4 col-xl-3 wow fadeInUp" data-wow-delay="0.7s">
-                        <div class=" bg-light rounded">
-                            <div class="service-content text-center p-4">
-                                <i class="fas fa-briefcase icon-size mb-3" style="color: #f39c12;"></i>
-                                <h4 class="mb-3" style="color: #2c3e50;">Profesionalismo</h4>
-                                <p class="mb-4" style="color: #7f8c8d;">Contamos con 13 años de experiencia dentro de la construcción, lo que nos permite realizar grandes proyectos de manera confiable y profesional.</p>
-                            </div>
-                        </div>
+                </div>
+        
+                <!-- Capacitación -->
+                <div class="col-12 col-md-6 col-lg-3 wow fadeInUp" data-wow-delay="0.7s">
+                    <div class="card p-4 shadow-sm h-100 border-0">
+                        <i class="fa-solid fa-chalkboard-teacher fa-3x text-primary mb-3"></i>
+                        <h4 class="text-secondary mb-3">Capacitación</h4>
+                        <p>Mantenemos a nuestro personal operativo actualizado y en 
+                            constante capacitación para solventar cualquier reto.</p>
                     </div>
                 </div>
             </div>
         </div>
-        <!-- Services End -->
+        <!-- Elementos clave End -->
 
+        
         <style>
         /* Ajusta el tamaño de los iconos */
         .icon-size {
@@ -260,138 +242,60 @@
 
         </style>
 
-    
-
-        <!-- Services Start -->
-        <!-- <div class="container-fluid service py-5">
-            <div class="container py-5">
-                <div class="text-center mx-auto pb-5 wow fadeInUp" data-wow-delay="0.1s" style="max-width: 800px;">
-                    <h4 class="text-primary">Our Services</h4>
-                    <h1 class="display-4"> Offering the Best Consulting & Investa Services</h1>
-                </div>
-                <div class="row g-4 justify-content-center text-center">
-                    <div class="col-md-6 col-lg-4 col-xl-3 wow fadeInUp" data-wow-delay="0.1s">
-                        <div class="service-item bg-light rounded">
-                            <div class="service-img">
-                                <img src="img/service-1.jpg" class="img-fluid w-100 rounded-top" alt="">
-                            </div>
-                            <div class="service-content text-center p-4">
-                                <div class="service-content-inner">
-                                    <a href="#" class="h4 mb-4 d-inline-flex text-start"><i class="fas fa-donate fa-2x me-2"></i> Business Strategy Invesments</a>
-                                    <p class="mb-4">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Earum nobis est sapiente natus officiis maxime
-                                    </p>
-                                    <a class="btn btn-light rounded-pill py-2 px-4" href="#">Read More</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-6 col-lg-4 col-xl-3 wow fadeInUp" data-wow-delay="0.3s">
-                        <div class="service-item bg-light rounded">
-                            <div class="service-img">
-                                <img src="img/service-2.jpg" class="img-fluid w-100 rounded-top" alt="">
-                            </div>
-                            <div class="service-content text-center p-4">
-                                <div class="service-content-inner">
-                                    <a href="#" class="h4 mb-4 d-inline-flex text-start"><i class="fas fa-donate fa-2x me-2"></i> Consultancy & Advice</a>
-                                    <p class="mb-4">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Earum nobis est sapiente natus officiis maxime
-                                    </p>
-                                    <a class="btn btn-light rounded-pill py-2 px-4" href="#">Read More</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-6 col-lg-4 col-xl-3 wow fadeInUp" data-wow-delay="0.5s">
-                        <div class="service-item bg-light rounded">
-                            <div class="service-img">
-                                <img src="img/service-4.jpg" class="img-fluid w-100 rounded-top" alt="">
-                            </div>
-                            <div class="service-content text-center p-4">
-                                <div class="service-content-inner">
-                                    <a href="#" class="h4 mb-4 d-inline-flex text-start"><i class="fas fa-donate fa-2x me-2"></i> Invesments Planning</a>
-                                    <p class="mb-4">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Earum nobis est sapiente natus officiis maxime
-                                    </p>
-                                    <a class="btn btn-light rounded-pill py-2 px-4" href="#">Read More</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-6 col-lg-4 col-xl-3 wow fadeInUp" data-wow-delay="0.7s">
-                        <div class="service-item bg-light rounded">
-                            <div class="service-img">
-                                <img src="img/service-3.jpg" class="img-fluid w-100 rounded-top" alt="">
-                            </div>
-                            <div class="service-content text-center p-4">
-                                <div class="service-content-inner">
-                                    <a href="#" class="h4 mb-4 d-inline-flex text-start"><i class="fas fa-donate fa-2x me-2"></i> Private Client Investment</a>
-                                    <p class="mb-4">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Earum nobis est sapiente natus officiis maxime
-                                    </p>
-                                    <a class="btn btn-light rounded-pill py-2 px-4" href="#">Read More</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-12">
-                        <a class="btn btn-primary rounded-pill py-3 px-5 wow fadeInUp" data-wow-delay="0.1s" href="#">Services More</a>
-                    </div>
-                </div>
-            </div>
-        </div> -->
-        <!-- Services End -->
-
 
         <!-- Project Start -->
         <div class="container-fluid project">
             <div class="container">
-                <div class="text-center mx-auto pb-5 wow fadeInUp" data-wow-delay="0.1s" style="max-width: 800px;">
-                    <h4 class="text-primary">Nuestros</h4>
-                    <h2 class="display-4">Servicios</h2>
+                <div class="text-center mb-4 wow fadeInLeft" data-wow-delay="0.1s">
+                    <h4 class="text-primary" style="margin-top: 80px;">Nuestros</h4>
+                    <h1 class="display-6">Servicios</h1>
                 </div>
                 <div class="project-carousel owl-carousel wow fadeInUp" data-wow-delay="0.1s">
                     <div class="project-item h-80 wow fadeInUp" data-wow-delay="0.1s">
                         <div class="project-img">
-                            <img src="img/projects-1.jpg" class="img-fluid w-90 rounded" alt="Image">
+                            <img src="img/proyectos_ejecutivos.jpg" class="img-fluid w-90 rounded" alt="Proyectos Ejecutivos">
                         </div>
                         <div class="project-content bg-light rounded p-4">
                             <div class="project-content-inner">
-                                <div class="project-icon mb-3"><i class="fas fa-chart-line fa-4x text-primary"></i></div>
+                                <div class="project-icon mb-3"><i class="fas fa-project-diagram fa-4x text-primary"></i></div>
                                 <p class="text-dark fs-3 mb-3">Proyectos Ejecutivos</p>
-                                <a href="#" class="h4" style="text-decoration-line: underline;">Ver más</a>
+                                <a href="service.html" class="h4" style="text-decoration-line: underline;">Ver más</a>
                             </div>
                         </div>
                     </div>
                     <div class="project-item h-80 wow fadeInUp" data-wow-delay="0.3s">
                         <div class="project-img">
-                            <img src="img/projects-1.jpg" class="img-fluid w-90 rounded" alt="Image">
+                            <img src="img/obra_civil.jpg" class="img-fluid w-90 rounded" alt="Obra Civil">
                         </div>
                         <div class="project-content bg-light rounded p-4">
                             <div class="project-content-inner">
-                                <div class="project-icon mb-3"><i class="fas fa-signal fa-4x text-primary"></i></div>
+                                <div class="project-icon mb-3"><i class="fas fa-building fa-4x text-primary"></i></div>
                                 <p class="text-dark fs-3 mb-3">Obra Civil</p>
-                                <a href="#" class="h4" style="text-decoration-line: underline;">Ver más</a>
+                                <a href="service.html" class="h4" style="text-decoration-line: underline;">Ver más</a>
                             </div>
                         </div>
                     </div>
                     <div class="project-item h-80">
                         <div class="project-img">
-                            <img src="img/projects-1.jpg" class="img-fluid w-90 rounded" alt="Image">
+                            <img src="img/ingenieria_en_instalaciones.jpg" class="img-fluid w-90 rounded" alt="Ingeniería de Instalaciones">
                         </div>
                         <div class="project-content bg-light rounded p-4">
                             <div class="project-content-inner">
-                                <div class="project-icon mb-3"><i class="fas fa-signal fa-4x text-primary"></i></div>
+                                <div class="project-icon mb-3"><i class="fas fa-tools fa-4x text-primary"></i></div>
                                 <p class="text-dark fs-3 mb-3">Ingeniería de Instalaciones</p>
-                                <a href="#" class="h4" style="text-decoration-line: underline;">Ver más</a>
+                                <a href="service.html" class="h4" style="text-decoration-line: underline;">Ver más</a>
                             </div>
                         </div>
                     </div>
                     <div class="project-item h-80">
                         <div class="project-img">
-                            <img src="img/projects-1.jpg" class="img-fluid w-90 rounded" alt="Image">
+                            <img src="img/urbanizacion.jpg" style="margin-top: 4px;" class="img-fluid w-90 rounded" alt="Urbanización">
                         </div>
                         <div class="project-content bg-light rounded p-4">
                             <div class="project-content-inner">
-                                <div class="project-icon mb-3"><i class="fas fa-signal fa-4x text-primary"></i></div>
+                                <div class="project-icon mb-3"><i class="fas fa-city fa-4x text-primary"></i></div>
                                 <p class="text-dark fs-3 mb-3">Urbanización</p>
-                                <a href="#" class="h4" style="text-decoration-line: underline;">Ver más</a>
+                                <a href="service.html"  style="text-decoration-line: underline" class="h4">Ver más</a>
                             </div>
                         </div>
                     </div>
@@ -426,181 +330,6 @@
         <!-- Brands End -->
 
 
-        <!-- Blog Start -->
-        <!-- <div class="container-fluid blog pb-5">
-            <div class="container pb-5">
-                <div class="text-center mx-auto pb-5 wow fadeInUp" data-wow-delay="0.1s" style="max-width: 800px;">
-                    <h4 class="text-primary">Our Blogs</h4>
-                    <h1 class="display-4">Latest Articles & News from the Blogs</h1>
-                </div>
-                <div class="row g-4 justify-content-center">
-                    <div class="col-md-6 col-lg-6 col-xl-4 wow fadeInUp" data-wow-delay="0.1s">
-                        <div class="blog-item bg-light rounded p-4" style="background-image: url(img/bg.png);">
-                            <div class="mb-4">
-                                <h4 class="text-primary mb-2">Investment</h4>
-                                <div class="d-flex justify-content-between">
-                                    <p class="mb-0"><span class="text-dark fw-bold">On</span> Mar 14, 2024</p>
-                                    <p class="mb-0"><span class="text-dark fw-bold">By</span> Mark D. Brock</p>
-                                </div>
-                            </div>
-                            <div class="project-img">
-                                <img src="img/blog-1.jpg" class="img-fluid w-100 rounded" alt="Image">
-                                <div class="blog-plus-icon">
-                                    <a href="img/blog-1.jpg" data-lightbox="blog-1" class="btn btn-primary btn-md-square rounded-pill"><i class="fas fa-plus fa-1x"></i></a>
-                                </div>
-                            </div>
-                            <div class="my-4">
-                                <a href="#" class="h4">Revisiting Your Investment & Distribution Goals</a>
-                            </div>
-                            <a class="btn btn-primary rounded-pill py-2 px-4" href="#">Explore More</a>
-                        </div>
-                    </div>
-                    <div class="col-md-6 col-lg-6 col-xl-4 wow fadeInUp" data-wow-delay="0.3s">
-                        <div class="blog-item bg-light rounded p-4" style="background-image: url(img/bg.png);">
-                            <div class="mb-4">
-                                <h4 class="text-primary mb-2">Business</h4>
-                                <div class="d-flex justify-content-between">
-                                    <p class="mb-0"><span class="text-dark fw-bold">On</span> Mar 14, 2024</p>
-                                    <p class="mb-0"><span class="text-dark fw-bold">By</span> Mark D. Brock</p>
-                                </div>
-                            </div>
-                            <div class="project-img">
-                                <img src="img/blog-2.jpg" class="img-fluid w-100 rounded" alt="Image">
-                                <div class="blog-plus-icon">
-                                    <a href="img/blog-2.jpg" data-lightbox="blog-2" class="btn btn-primary btn-md-square rounded-pill"><i class="fas fa-plus fa-1x"></i></a>
-                                </div>
-                            </div>
-                            <div class="my-4">
-                                <a href="#" class="h4">Dimensional Fund Advisors Interview with Director</a>
-                            </div>
-                            <a class="btn btn-primary rounded-pill py-2 px-4" href="#">Explore More</a>
-                        </div>
-                    </div>
-                    <div class="col-md-6 col-lg-6 col-xl-4 wow fadeInUp" data-wow-delay="0.5s">
-                        <div class="blog-item bg-light rounded p-4" style="background-image: url(img/bg.png);">
-                            <div class="mb-4">
-                                <h4 class="text-primary mb-2">Consulting</h4>
-                                <div class="d-flex justify-content-between">
-                                    <p class="mb-0"><span class="text-dark fw-bold">On</span> Mar 14, 2024</p>
-                                    <p class="mb-0"><span class="text-dark fw-bold">By</span> Mark D. Brock</p>
-                                </div>
-                            </div>
-                            <div class="project-img">
-                                <img src="img/blog-3.jpg" class="img-fluid w-100 rounded" alt="Image">
-                                <div class="blog-plus-icon">
-                                    <a href="img/blog-3.jpg" data-lightbox="blog-3" class="btn btn-primary btn-md-square rounded-pill"><i class="fas fa-plus fa-1x"></i></a>
-                                </div>
-                            </div>
-                            <div class="my-4">
-                                <a href="#" class="h4">Interested in Giving Back this year? Here are some tips</a>
-                            </div>
-                            <a class="btn btn-primary rounded-pill py-2 px-4" href="#">Explore More</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div> -->
-        <!-- Blog End -->
-
-
-        <!-- Team Start -->
-        <!-- <div class="container-fluid team pb-5">
-            <div class="container pb-5">
-                <div class="text-center mx-auto pb-5 wow fadeInUp" data-wow-delay="0.1s" style="max-width: 800px;">
-                    <h4 class="text-primary">Our Team</h4>
-                    <h1 class="display-4">Our Investa Company Dedicated Team Member</h1>
-                </div>
-                <div class="row g-4 justify-content-center">
-                    <div class="col-sm-6 col-md-6 col-lg-4 col-xl-3 wow fadeInUp" data-wow-delay="0.1s">
-                        <div class="team-item rounded">
-                            <div class="team-img">
-                                <img src="img/team-1.jpg" class="img-fluid w-100 rounded-top" alt="Image">
-                                <div class="team-icon">
-                                    <a class="btn btn-primary btn-sm-square text-white rounded-circle mb-3" href=""><i class="fas fa-share-alt"></i></a>
-                                    <div class="team-icon-share">
-                                        <a class="btn btn-primary btn-sm-square text-white rounded-circle mb-3" href=""><i class="fab fa-facebook-f"></i></a>
-                                        <a class="btn btn-primary btn-sm-square text-white rounded-circle mb-3" href=""><i class="fab fa-twitter"></i></a>
-                                        <a class="btn btn-primary btn-sm-square text-white rounded-circle mb-0" href=""><i class="fab fa-instagram"></i></a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="team-content bg-dark text-center rounded-bottom p-4">
-                                <div class="team-content-inner rounded-bottom">
-                                    <h4 class="text-white">Mark D. Brock</h4>
-                                    <p class="text-muted mb-0">CEO & Founder</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-sm-6 col-md-6 col-lg-4 col-xl-3 wow fadeInUp" data-wow-delay="0.3s">
-                        <div class="team-item rounded">
-                            <div class="team-img">
-                                <img src="img/team-2.jpg" class="img-fluid w-100 rounded-top" alt="Image">
-                                <div class="team-icon">
-                                    <a class="btn btn-primary btn-sm-square text-white rounded-circle mb-3" href=""><i class="fas fa-share-alt"></i></a>
-                                    <div class="team-icon-share">
-                                        <a class="btn btn-primary btn-sm-square text-white rounded-circle mb-3" href=""><i class="fab fa-facebook-f"></i></a>
-                                        <a class="btn btn-primary btn-sm-square text-white rounded-circle mb-3" href=""><i class="fab fa-twitter"></i></a>
-                                        <a class="btn btn-primary btn-sm-square text-white rounded-circle mb-0" href=""><i class="fab fa-instagram"></i></a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="team-content bg-dark text-center rounded-bottom p-4">
-                                <div class="team-content-inner rounded-bottom">
-                                    <h4 class="text-white">Mark D. Brock</h4>
-                                    <p class="text-muted mb-0">CEO & Founder</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-sm-6 col-md-6 col-lg-4 col-xl-3 wow fadeInUp" data-wow-delay="0.5s">
-                        <div class="team-item rounded">
-                            <div class="team-img">
-                                <img src="img/team-3.jpg" class="img-fluid w-100 rounded-top" alt="Image">
-                                <div class="team-icon">
-                                    <a class="btn btn-primary btn-sm-square text-white rounded-circle mb-3" href=""><i class="fas fa-share-alt"></i></a>
-                                    <div class="team-icon-share">
-                                        <a class="btn btn-primary btn-sm-square text-white rounded-circle mb-3" href=""><i class="fab fa-facebook-f"></i></a>
-                                        <a class="btn btn-primary btn-sm-square text-white rounded-circle mb-3" href=""><i class="fab fa-twitter"></i></a>
-                                        <a class="btn btn-primary btn-sm-square text-white rounded-circle mb-0" href=""><i class="fab fa-instagram"></i></a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="team-content bg-dark text-center rounded-bottom p-4">
-                                <div class="team-content-inner rounded-bottom">
-                                    <h4 class="text-white">Mark D. Brock</h4>
-                                    <p class="text-muted mb-0">CEO & Founder</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-sm-6 col-md-6 col-lg-4 col-xl-3 wow fadeInUp" data-wow-delay="0.7s">
-                        <div class="team-item rounded">
-                            <div class="team-img">
-                                <img src="img/team-4.jpg" class="img-fluid w-100 rounded-top" alt="Image">
-                                <div class="team-icon">
-                                    <a class="btn btn-primary btn-sm-square text-white rounded-circle mb-3" href=""><i class="fas fa-share-alt"></i></a>
-                                    <div class="team-icon-share">
-                                        <a class="btn btn-primary btn-sm-square text-white rounded-circle mb-3" href=""><i class="fab fa-facebook-f"></i></a>
-                                        <a class="btn btn-primary btn-sm-square text-white rounded-circle mb-3" href=""><i class="fab fa-twitter"></i></a>
-                                        <a class="btn btn-primary btn-sm-square text-white rounded-circle mb-0" href=""><i class="fab fa-instagram"></i></a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="team-content bg-dark text-center rounded-bottom p-4">
-                                <div class="team-content-inner rounded-bottom">
-                                    <h4 class="text-white">Mark D. Brock</h4>
-                                    <p class="text-muted mb-0">CEO & Founder</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div> -->
-        <!-- Team End -->
-
-
         <!-- Testimonial Start -->
         <div class="container-fluid testimonial bg-light py-5">
             <div class="container py-5">
@@ -615,7 +344,7 @@
                     <div class="col-xl-8">
                         <div class="testimonial-carousel owl-carousel wow fadeInUp" data-wow-delay="0.1s">
                             <div class="testimonial-item bg-white rounded p-4 wow fadeInUp" data-wow-delay="0.3s">
-                                <div class="d-flex">
+                                <div class="">
                                     <div><i class="fas fa-quote-left fa-3x text-dark me-3"></i></div>
                                     <p class="mt-4">"Trabajar con ITBSA ha sido una experiencia excepcional. Nos ayudaron con la construcción de una nave industrial en tiempo récord, 
                                         cumpliendo con los estándares de calidad que exige nuestro sector. Su equipo de mantenimiento industrial es igual de eficiente; gracias a ellos, 
@@ -633,7 +362,7 @@
                                 </div>
                             </div>
                             <div class="testimonial-item bg-white rounded p-4 wow fadeInUp" data-wow-delay="0.5s">
-                                <div class="d-flex">
+                                <div class="">
                                     <div><i class="fas fa-quote-left fa-3x text-dark me-3"></i></div>
                                     <p class="mt-4">"Llevamos años trabajando con ITBSA y siempre han sido una solución confiable para nuestras necesidades. Desde el mantenimiento 
                                         preventivo de nuestras instalaciones hasta la remodelación de nuestras oficinas, han demostrado ser un equipo profesional, puntual y con una 
@@ -651,7 +380,7 @@
                                 </div>
                             </div>
                             <div class="testimonial-item bg-white rounded p-4 wow fadeInUp" data-wow-delay="0.7s">
-                                <div class="d-flex">
+                                <div class="">
                                     <div><i class="fas fa-quote-left fa-3x text-dark me-3"></i></div>
                                     <p class="mt-4">"Cuando decidimos remodelar nuestras oficinas, buscábamos un equipo que pudiera equilibrar diseño moderno y funcionalidad tecnológica. 
                                         ITBSA superó nuestras expectativas: transformaron nuestro espacio en un entorno profesional de primer nivel, integrando un sistema de voz y 
@@ -742,7 +471,7 @@
                     </div>
                     <div class="col-lg-6 wow fadeInRight" data-wow-delay="0.3s">
                         <div class="faq-img RotateMoveRight rounded">
-                            <img src="img/faq-img.jpg" class="img-fluid rounded w-100" alt="Image">
+                            <img src="img/atencion_a_clientes.jpg" class="img-fluid rounded w-100" alt="Image">
                             <a class="faq-btn btn btn-primary rounded-pill text-white py-3 px-5" href="#">Read More Q & A <i class="fas fa-arrow-right ms-2"></i></a>
                         </div>
                     </div>
