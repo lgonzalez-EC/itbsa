@@ -841,7 +841,7 @@ div {
 .service-card .card-header {
     background-color: #f7ba01;
     align-items: center;
-    width: 300px;
+    width: 350px;
     text-align: center;
     transform: skew(-20deg);
     border-radius: 5px;
@@ -850,7 +850,7 @@ div {
 
 .service-card .card-title {
     color: #fff;
-    font-size: 1.8rem; /* Ajuste del tamaño */
+    font-size: 1.5rem; /* Ajuste del tamaño */
     margin: 0;
     transform: skew(20deg);
     word-wrap: break-word; /* Permite dividir palabras largas */
@@ -871,8 +871,8 @@ div {
 }
 
 .services-list li {
-    color: #fff;
-    font-size: 1rem;
+    color: #ffffff;
+    font-size: 1.2rem;
     margin-bottom: 10px;
     padding-left: 20px;
     position: relative;
@@ -882,10 +882,10 @@ div {
 
 .services-list li::before {
     content: "•";
-    color: #f7ba01;
+    color: #ffffff;
     position: relative;
     left: 0;
-    font-size: 1.2rem;
+    font-size: 1.3rem;
     line-height: 1;
 }
 
