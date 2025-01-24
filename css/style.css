@@ -163,7 +163,7 @@
 }
 
 
-/* Prueba Start */
+/* Carousel Start */
 .wrapper{
     width: 100%;
     max-width: 1536px;
@@ -247,9 +247,7 @@
     animation-delay: calc(30s / 11 * (11 - 11) * -1);
 }
 
-  
-  
-/* Prueba Start */
+/* Carousel End */
 
 
 
@@ -608,8 +606,9 @@
 }
 /*** About End ***/
 
+
 /*** Service Start ***/
-.service .service-item {
+/* .service .service-item {
     box-shadow: 0 0 45px rgba(0, 0, 0, 0.3);
 }
 
@@ -687,7 +686,7 @@
 
 .service .service-item:hover .service-content .service-content-inner a.h4:hover {
     color: var(--bs-primary) !important;
-}
+} */
 /*** Service End ***/
 
 /*** Project Start ***/
@@ -799,6 +798,128 @@
     border: 8px solid var(--bs-primary);
 }
 /*** Project End ***/
+
+
+/* Prueba en servicios Start */
+/* General container */
+.about {
+    background-color: #000;
+    padding: 5rem 0;
+}
+
+/* Header styles */
+.header-intro {
+    max-width: 800px;
+}
+
+.header-intro h4 {
+    color: #f7ba01;
+    margin-bottom: 15px;
+}
+
+.header-intro h1 {
+    color: #fff;
+}
+
+
+/* Service card styles */
+.service-card {
+    position: relative;
+    padding: 10px;
+    margin: 20px auto;
+    border-radius: 10px;
+    overflow: hidden; /* Evita que el contenido se salga del card */
+    z-index: 1;
+    max-width: 90%; /* Limita el ancho máximo */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Mejora la visualización */
+}
+
+/* Header (Title) Styles */
+.service-card .card-header {
+    background-color: #f7ba01;
+    align-items: center;
+    width: 300px;
+    text-align: center;
+    transform: skew(-20deg);
+    border-radius: 5px;
+    overflow: hidden; /* Evita contenido fuera del contenedor */
+}
+
+.service-card .card-title {
+    color: #fff;
+    font-size: 1.8rem; /* Ajuste del tamaño */
+    margin: 0;
+    transform: skew(20deg);
+    word-wrap: break-word; /* Permite dividir palabras largas */
+    overflow-wrap: break-word;
+}
+
+/* Body and List Styles */
+.service-card .card-body {
+    margin-top: 20px;
+    text-align: left;
+    overflow: hidden;
+}
+
+.services-list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.services-list li {
+    color: #fff;
+    font-size: 1rem;
+    margin-bottom: 10px;
+    padding-left: 20px;
+    position: relative;
+    word-wrap: break-word; /* Divide palabras largas */
+    overflow-wrap: break-word;
+}
+
+.services-list li::before {
+    content: "•";
+    color: #f7ba01;
+    position: relative;
+    left: 0;
+    font-size: 1.2rem;
+    line-height: 1;
+}
+
+/* Responsiveness */
+@media (max-width: 768px) {
+    .service-card {
+        padding: 30px;
+        margin: 15px 10px;
+        background-size: contain;
+    }
+
+    .service-card .card-title {
+        font-size: 1.5rem; /* Reduce el tamaño del título */
+    }
+
+    .services-list li {
+        font-size: 0.9rem; /* Reduce el tamaño del texto */
+    }
+}
+
+@media (max-width: 576px) {
+    .service-card {
+        padding: 15px;
+        margin: 10px 5px;
+        background-size: contain;
+    }
+
+    .service-card .card-title {
+        font-size: 1.2rem; /* Título más pequeño */
+    }
+
+    .services-list li {
+        font-size: 0.8rem; /* Texto más compacto */
+    }
+}
+
+
 
 /*** Blog Start ***/
 .blog .blog-item .project-img {
