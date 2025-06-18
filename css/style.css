@@ -973,7 +973,7 @@ div {
     position: absolute;
     top: 0;
     right: 0;
-    background-image: url(../img/bg.png);
+    /* background-image: url(../img/bg.png); */
     object-fit: cover;
     z-index: -1;
 }
@@ -1053,3 +1053,32 @@ div {
   ::-webkit-scrollbar-thumb:hover {
     background-color: #102147; /* Color más oscuro al pasar el mouse */
   }
+
+/* Por defecto, oculta la imagen móvil */
+.img-mobile {
+    display: none;
+}
+
+/* En pantallas menores a 768px, oculta la de escritorio y muestra la móvil */
+@media (max-width: 767.98px) {
+    .img-desktop {
+        display: none !important;
+    }
+    .img-mobile {
+        display: block !important;
+        width: 100%;
+        height: auto;
+    }
+}
+
+/* En escritorio, muestra solo la de escritorio */
+@media (min-width: 768px) {
+    .img-desktop {
+        display: block !important;
+        width: 100%;
+        height: auto;
+    }
+    .img-mobile {
+        display: none !important;
+    }
+}

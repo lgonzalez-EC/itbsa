@@ -34,16 +34,17 @@
     $(".header-carousel").owlCarousel({
         items: 1,
         autoplay: true,
+        autoplayTimeout: 10000, // <-- Cambia aquí el tiempo en milisegundos
         smartSpeed: 2000,
         center: false,
         dots: false,
         loop: true,
         margin: 0,
-        nav : true,
-        navText : [
-            '<i class="bi bi-arrow-left"></i>',
-            '<i class="bi bi-arrow-right"></i>'
-        ]
+        //nav : true,
+        // navText : [
+        //     '<i class="bi bi-arrow-left"></i>',
+        //     '<i class="bi bi-arrow-right"></i>'
+        // ]
     });
 
 
@@ -160,7 +161,7 @@
 
 
 
-  
+
 
 
 
